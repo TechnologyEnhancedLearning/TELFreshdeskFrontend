@@ -1,0 +1,91 @@
+/* Hide "Are you an agent?" element from login screen */
+.freshid_login {
+    display:none 
+   }
+   
+   .login-form h3.heading {
+        display:none;
+   }
+   
+   .article-vote { 
+     display:none;
+   }
+   
+   .login-form .btn-newticket {
+        display:none;
+   }
+   
+   a.check-status  {
+     display:none;
+     
+   }
+   
+   .hc-search-c {
+     display:none;
+   }
+   
+   .banner-wrapper {
+   display: flex;
+     justify-content: space-between;
+     padding-right:0;
+   }
+   
+   .left-wrapper,
+   .right-wrapper {
+     display: inline-block;
+   }
+   
+   .banner-logo2 img {
+     width:258px;
+   }
+   
+   .page::after {
+     content: none;
+     display: table;
+     clear: both;
+   }
+   
+   .banner-wrapper .heading {
+     display:none;
+   }
+   
+   footer ul {
+       margin: 0;
+       padding: 0;
+       list-style: none;
+       display:block;
+   }
+   
+   footer li {
+       display:inline-block;
+   }
+   
+   .footer-links a::before {
+     content: none;
+   
+     
+   
+   }
+   
+   .footer a {
+       margin: 0 0px;
+     
+   }
+   
+   .alert-success, .alert-notice {
+      background-color: #e8edee;
+     color: #000;
+     border:none;
+   }
+   
+   .help-center-sc .hc-nav {
+     width: 50%;
+     margin: 0;
+     float:none;
+   }
+   
+   .help-center-sc {
+     
+     border: none;
+   
+   }

@@ -1,0 +1,56 @@
+{{ header }}
+<div class="page">
+	
+	
+	<!-- Search and page links for the page -->
+	{% if portal.current_tab and portal.current_tab == "home" %}
+		<section class="help-center rounded-6">	
+         
+			<div class="hc-search">
+				<div class="hc-search-c">
+					<h2 class="heading hide-in-mobile">{% translate header.help_center %}</h2>
+					{% snippet search_form %}
+                  <p class="althelplink">If you cannot find the information you need here, please contact the <a class="" href="/support/tickets/new">Learning Hub support team</a>.</p>
+				</div>
+			</div>
+	
+          	<!--
+			<div class="hc-nav {% if portal.contact_info %} nav-with-contact {% endif %}">				
+				{{ portal | helpcenter_navigation }}
+			</div>
+			-->
+		</section>
+	{% endif %}
+
+	<!-- Notification Messages -->
+	{{ page_message }}
+
+	{% if portal.current_page != "user_signup" and portal.current_page != "submit_ticket" %}
+	<div class="c-wrapper">		
+		{{ content_for_layout }}
+	</div>
+	{% elsif portal.current_page == "submit_ticket" %}
+	<div class="c-wrapper">		
+		<div class="new_ticket_page">
+		{{ content_for_layout }}
+		</div>
+	</div>
+	{% else %}
+	<div class="signup-page">
+	<div class="signup-wrapper">
+	{{ content_for_layout }}
+	</div>
+	</div>
+	{% endif %}
+
+	
+
+</div>
+{{ footer }}
+
+<script> 
+      jQuery("div.hc-search-c h2.heading.hide-in-mobile:contains(How can we help you today?)").text('How can we help you?'); 
+      jQuery(".hc-search-input input").attr("placeholder","I need help with...");
+   jQuery("div.controls label:contains('I consent for Learning Hub to process my data and agree to the terms of the Privacy Policy')").contents().last().replaceWith('I consent for Learning Hub to process my data and agree to the terms of the <a href="https://www.hee.nhs.uk/about/privacy-notice" target="_blank">Privacy Policy</a>');
+  
+</script>

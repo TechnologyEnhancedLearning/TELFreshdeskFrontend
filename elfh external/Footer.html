@@ -1,0 +1,31 @@
+
+
+{% if  portal.current_page != 'csat_survey' %}
+	<footer class="footer rounded-6">
+		<nav class="footer-links page no-padding">
+          	<!--
+			{% if portal.tabs.size > 0 %}
+					{% for tab in portal.tabs %}
+						<a href="{{tab.url}}" class="{% if tab.tab_type == current_tab %}active{% endif %}">{{ tab.label }}</a>
+					{% endfor %}
+			{% endif %}
+			-->
+                        <ul id="menu-footer-menu" class="footer-nav">
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                    <a href="https://www.e-lfh.org.uk/terms-and-conditions/">Terms and Conditions</a>
+                                </li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                        <span> | </span>
+                                    <a href="https://support.e-lfh.org.uk/about-hee-elfh/service-levels-and-user-satisfaction/#2715">Accessibility Statement</a>
+                                </li>
+                        </ul>
+          
+          				<small>© elearning for healthcare 2022</small>
+		</nav>
+	</footer>
+	{{ portal | portal_copyright }}
+{% endif %}
+
+<script>
+ jQuery(".footer-links a[href='/support/solutions']").text('Apple Pie');
+ </script>

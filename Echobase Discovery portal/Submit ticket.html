@@ -1,0 +1,37 @@
+<section class="content main rounded-6 fc-new-ticket">
+	<h3 class="heading">{% translate ticket.submit_ticket_title %}</h3>
+  <p>Custom text added by Paul Steven</p>
+  	{% snippet new_ticket_form %}
+</section>
+
+<section class="sidebar content-light rounded-6 hide ticket-search" id="new-ticket-search">
+	<br />
+</section>
+
+<script>
+  
+  //jQuery('#helpdesk_ticket_group_id').parents('.control-group').remove();
+  
+  jQuery('#helpdesk_ticket_custom_field_cf_void_department_2043685').parents('.control-group').remove();
+  jQuery('#helpdesk_ticket_custom_field_cf_gmcgdcnmc_2043685').parents('.control-group').remove();
+
+
+  
+  jQuery('#helpdesk_ticket_group_id option[value="80000587628"]').remove();
+  jQuery("#helpdesk_ticket_group_id option[value='80000587543']").remove();
+  
+  
+    
+  
+  jQuery("#helpdesk_ticket_custom_field_cf_void_team_2043685 option[value='Adapt']").remove();
+  jQuery("#helpdesk_ticket_custom_field_cf_void_internalexternal_2043685 option[data-id='80001502539']").remove();
+  jQuery("#helpdesk_ticket_custom_field_cf_void_internalexternal_2043685 option[data-id='80001502540']").remove();
+  
+  jQuery(document).ready(function() {
+
+	
+    jQuery('#helpdesk_ticket_group_id').find('option:contains("Billing")').remove();
+
+});
+  
+</script>

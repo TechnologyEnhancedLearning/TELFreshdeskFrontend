@@ -1,0 +1,68 @@
+body {
+    font-family: Arial,sans-serif;
+}
+
+
+
+.heading {
+  font-family: Arial,sans-serif;
+}
+
+.banner-title h1 {
+	display:none;
+}
+
+
+
+
+.right-wraapper::after {
+  content: none;
+  display: table;
+  clear: both;
+}
+
+.header_submenu { 
+   
+    font-size: 2.2rem;
+ 	line-height: 2.2rem;
+    color: white;
+    text-align: right;
+   
+}
+
+.footer ul li {
+    list-style-type: none;
+    font-size: 17px;
+}
+
+.footer ul li.footer_second_list_item {
+  padding-top:1rem;
+}
+
+.footer .footer-logo {
+    height: 80px!important;
+}
+
+a.check-status  {
+  display:none;
+  
+}
+
+div.hc-search p.althelplink {
+  	padding-top:1rem;
+	font-size: 1.6rem;
+    line-height: 2.3rem;
+}
+
+div.hc-search p.althelplink a {
+  text-decoration: underline;
+}
+
+div.alert-notice {
+  font-size:1.9rem;
+}
+
+.footer-links .portal-logo {
+  float: none;
+  margin-left: -5px !important;
+}

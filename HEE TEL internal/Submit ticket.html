@@ -1,0 +1,66 @@
+<section class="content main rounded-6 fc-new-ticket">
+	<h3 class="heading">{% translate ticket.submit_ticket_title %}</h3>
+  <p><b>-</b></p>
+  	{% snippet new_ticket_form %}
+</section>
+
+<section class="sidebar content-light rounded-6 hide ticket-search" id="new-ticket-search">
+	<br />
+</section>
+
+<script>
+  
+  //jQuery('#helpdesk_ticket_group_id').parents('.control-group').remove();
+  
+  jQuery('#helpdesk_ticket_custom_field_cf_void_department_2043685').parents('.control-group').remove();
+  jQuery('#helpdesk_ticket_custom_field_cf_gmcgdcnmc_2043685').parents('.control-group').remove();
+
+
+  
+  jQuery('#helpdesk_ticket_group_id option[value="80000587628"]').remove();
+  jQuery("#helpdesk_ticket_group_id option[value='80000587543']").remove();
+  
+  
+    
+  
+  jQuery("#helpdesk_ticket_custom_field_cf_void_team_2043685 option[value='Adapt']").remove();
+  jQuery("#helpdesk_ticket_custom_field_cf_void_internalexternal_2043685 option[data-id='80001502539']").remove();
+  jQuery("#helpdesk_ticket_custom_field_cf_void_internalexternal_2043685 option[data-id='80001502540']").remove();
+  
+  jQuery(document).ready(function() {
+
+	
+    jQuery('#helpdesk_ticket_group_id').find('option:contains("Billing")').remove();
+    jQuery('#helpdesk_ticket_group_id').find('option:contains("Certificates")').remove();
+    jQuery('#helpdesk_ticket_group_id').find('option:contains("eIntegrity")').remove();
+    jQuery('#helpdesk_ticket_group_id').find('option:contains("GDPR")').remove();
+    jQuery('#helpdesk_ticket_group_id').find('option:contains("General")').remove();
+    jQuery('#helpdesk_ticket_group_id').find('option:contains("LIVE CHAT")').remove();
+    jQuery('#helpdesk_ticket_group_id').find('option:contains("Hub Feedback")').remove();
+    jQuery('#helpdesk_ticket_group_id').find('option:contains("LHub Group")').remove();
+    jQuery('#helpdesk_ticket_group_id').find('option:contains("Registration")').remove();
+    jQuery('#helpdesk_ticket_group_id').find('option:contains("Username / Password")').remove();
+    jQuery('#helpdesk_ticket_group_id').find('option:contains("Developer Team")').remove();
+    jQuery('#helpdesk_ticket_group_id').find('option:contains("Reporting")').remove();
+    jQuery('#helpdesk_ticket_group_id').find('option:contains("Accessibility")').remove();
+    jQuery('#helpdesk_ticket_group_id').find('option:contains("AICC")').remove();
+    jQuery('#helpdesk_ticket_group_id').find('option:contains("DLS")').remove();
+    jQuery('#helpdesk_ticket_group_id').find('option:contains("LC Transfer")').remove();
+    jQuery('#helpdesk_ticket_group_id').find('option:contains("Locked account")').remove();
+    jQuery('#helpdesk_ticket_group_id').find('option:contains("LChat Locked account")').remove();
+    jQuery('#helpdesk_ticket_group_id').find('option:contains("Platform Testing")').remove();
+    
+    jQuery('#helpdesk_ticket_custom_field_cf_learning_hub_username_2043685').parents('.control-group').remove();
+    jQuery('#helpdesk_ticket_custom_field_cf_hee_consent_policy_2043685').parents('.control-group').remove();
+    
+    jQuery('#helpdesk_ticket_custom_field_cf_void_lh_query_2043685').parents('.control-group').remove();
+    jQuery('#helpdesk_ticket_custom_field_cf_alternate_email_address_2043685').parents('.control-group').remove();
+    jQuery('#helpdesk_ticket_custom_field_cf_gmcgdcnmc860663_2043685').parents('.control-group').remove();
+    jQuery('#helpdesk_ticket_custom_field_cf_elearning_programme_2043685').parents('.control-group').remove();
+    jQuery('#helpdesk_ticket_custom_field_cf_your_username_2043685').parents('.control-group').remove();
+    
+    
+
+});
+  
+</script>

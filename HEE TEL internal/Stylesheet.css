@@ -1,0 +1,26 @@
+.banner-title h1 {
+	display:none;
+}
+
+/* Hide "Are you an agent?" element from login screen */
+.freshid_login {
+ display:none 
+}
+
+.login-form h3.heading {
+     display:none;
+}
+
+
+.login-form .btn-newticket {
+     display:none;
+}
+
+
+.c-wrapper {
+  border: none;
+}
+
+#ticket-sidebar {
+display:none;
+}
