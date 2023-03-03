@@ -1,0 +1,35 @@
+{{header}}
+
+<main class="fw-main-wrapper" id="fw-main-content">
+  {{ content_for_layout }}
+</main>
+
+{{footer}}
+
+<script>
+	/*---------------DA CUSTOMISATION-------------------*/
+	jQuery(document).ready(function () {
+
+		console.log('layouttt')
+		jQuery('.control-group').each(function(i, element){
+			let label = jQuery(element).find('label');
+			let control = jQuery(element).find('input, textarea, select');
+
+			if(jQuery(control[0]).is('[id]')){
+				label.prop('for', control[0].id);
+			}
+		});
+
+		jQuery('a[href="javascript:void(null);"], a[href="#"]').each(function(i, el){
+			jQuery(el).removeAttr('href');
+		});
+
+		jQuery('*').filter(function(ix, el) {
+			return jQuery(this).css('color') == 'rgb(154, 161, 166)'
+		}).css('color', '#6d7175');
+
+    jQuery('.icon-head-phone').parent().attr('title', 'helpdesk');
+
+	});
+
+</script>

@@ -49,8 +49,22 @@
 {{ footer }}
 
 <script> 
-      jQuery("div.hc-search-c h2.heading.hide-in-mobile:contains(How can we help you today?)").text('How can we help you?'); 
-      jQuery(".hc-search-input input").attr("placeholder","I need help with...");
-   jQuery("div.controls label:contains('I consent for Learning Hub to process my data and agree to the terms of the Privacy Policy')").contents().last().replaceWith('I consent for Learning Hub to process my data and agree to the terms of the <a href="https://www.hee.nhs.uk/about/privacy-notice" target="_blank">Privacy Policy</a>');
+	jQuery("div.hc-search-c h2.heading.hide-in-mobile:contains(How can we help you today?)").text('How can we help you?'); 
+	jQuery(".hc-search-input input").attr("placeholder","I need help with...");
+	jQuery("div.controls label:contains('I consent for Learning Hub to process my data and agree to the terms of the Privacy Policy')").contents().last().replaceWith('I consent for Learning Hub to process my data and agree to the terms of the <a href="https://www.hee.nhs.uk/about/privacy-notice" target="_blank">Privacy Policy</a>');
+  
+</script>
+
+<script>
+	/*---------------DA CUSTOMISATION-------------------*/
+	jQuery('a[href="javascript:void(null);"], a[href="#"]').each(function(i, element){
+		jQuery(element).removeAttr('href');
+	});
+
+	jQuery('*').filter(function(ix, el) {
+		return jQuery(this).css('color') == 'rgb(154, 161, 166)'
+	}).css('color', '#6d7175');
+
+	jQuery('img[alt="Logo"]').attr('alt', 'NHS Learning Hub logo');
   
 </script>

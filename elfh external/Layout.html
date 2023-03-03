@@ -43,3 +43,29 @@
 
 </div>
 {{ footer }}
+
+<script>
+	/*---------------DA CUSTOMISATION-------------------*/
+	jQuery(document).ready(function () {
+	  jQuery('.control-group').each(function(i, element){
+		let label = jQuery(element).find('label');
+		let control = jQuery(element).find('input, textarea, select');
+	
+		if(jQuery(control[0]).is('[id]')){
+		  label.prop('for', control[0].id);
+		}
+	  });
+	
+	  jQuery('a[href="javascript:void(null);"], a[href="#"]').each(function(i, el){
+		  jQuery(el).removeAttr('href');
+	  });
+
+	  jQuery('img[alt="Logo"]').attr('alt', 'elfh logo');
+
+	  jQuery('img[title="NHS HEE"]').attr('alt', 'NHS HEE logo');
+
+	  jQuery('#ticket_file').prev().empty().append(jQuery('<label>', {'for': 'ticket_file', 'text':'+ Attach a file'}));
+	
+	});
+	
+	</script>

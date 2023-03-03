@@ -74,3 +74,32 @@
 </div>
 {{ footer }}
 
+<script>
+	/*---------------DA CUSTOMISATION-------------------*/
+	jQuery(document).ready(function () {
+
+		console.log('layouttt')
+		jQuery('.control-group').each(function(i, element){
+			let label = jQuery(element).find('label');
+			let control = jQuery(element).find('input, textarea, select');
+
+			if(jQuery(control[0]).is('[id]')){
+				label.prop('for', control[0].id);
+			}
+		});
+
+		jQuery('a[href="javascript:void(null);"], a[href="#"], a[data-toggle-dom="#header-tabs"]').each(function(i, el){
+			jQuery(el).removeAttr('href');
+		});
+
+		jQuery('*').filter(function(ix, el) {
+			return jQuery(this).css('color') == 'rgb(154, 161, 166)'
+		}).css('color', '#6d7175');
+
+		jQuery('img[alt="Logo"]').attr('alt', 'elfh logo');
+
+		jQuery('#ticket_file').prev().empty().append(jQuery('<label>', {'for': 'ticket_file', 'text':'+ Attach a file'}));
+
+	});
+
+</script>
